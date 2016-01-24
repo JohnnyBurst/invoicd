@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  get 'about/index'
+  get 'about' => 'about/index'
 
   get 'home/index'
 
   resources :invoices
   
-  root to: 'invoices#index'
+  get 'invoices' => 'invoices/index'
+  
+  root to: 'home#index'
 end
