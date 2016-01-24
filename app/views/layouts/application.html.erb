@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>Invoicd</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+
+<p>Welcome to Invoicd</p>
+
+<%= link_to "Home", root_path %>
+<%= link_to "About Us", root_path %>
+<%= link_to "Contact", root_path %>
+<%= link_to "Careers", root_path %>
+<%= link_to "Facts", root_path %>
+<%= link_to "Advantages", root_path %>
+<%= link_to "Login", root_path %>
 
 <%= yield %>
 
